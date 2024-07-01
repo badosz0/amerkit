@@ -13,12 +13,12 @@ type VStackProps = {
   reverse?: boolean;
 } & ComponentPropsWithoutRef<'div'>;
 
-const VStack = forwardRef<VStackElement, VStackProps>((props, forwaredRef) => {
+const VStack = forwardRef<VStackElement, VStackProps>((props, forwardedRef) => {
   const { style, spacing, alignV, alignH, reverse, ...rest } = props;
   return (
     <div
       {...rest}
-      ref={forwaredRef}
+      ref={forwardedRef}
       style={{
         ...style,
         display: 'flex',

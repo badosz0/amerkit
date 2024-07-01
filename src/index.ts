@@ -1,3 +1,4 @@
+export * from './components/AspectRatio';
 export * from './components/HStack';
 export * from './components/VStack';
 export * from './hooks/useDebounce';

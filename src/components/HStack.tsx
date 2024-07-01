@@ -13,12 +13,12 @@ type HStackProps = {
   reverse?: boolean;
 } & ComponentPropsWithoutRef<'div'>;
 
-const HStack = forwardRef<HStackElement, HStackProps>((props, forwaredRef) => {
+const HStack = forwardRef<HStackElement, HStackProps>((props, forwardedRef) => {
   const { style, spacing, alignV, alignH, reverse, ...rest } = props;
   return (
     <div
       {...rest}
-      ref={forwaredRef}
+      ref={forwardedRef}
       style={{
         ...style,
         display: 'flex',
