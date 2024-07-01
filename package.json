@@ -1,0 +1,45 @@
+{
+  "name": "amerkit",
+  "version": "0.1.0",
+  "description": "A set of components, hooks and utilities for building React applications.",
+  "main": "dist/index.cjs",
+  "typings": "dist/index.d.ts",
+  "module": "dist/amerkit.esm.js",
+  "license": "MIT",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "exports": {
+    "types": {
+      "import": "./dist/index.d.ts",
+      "require": "./dist/index.d.cts"
+    },
+    "import": "./dist/amerkit.esm.js",
+    "require": "./dist/index.cjs"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badosz0/amerkit.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {}
+}
