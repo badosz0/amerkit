@@ -2,22 +2,13 @@
   "name": "amerkit",
   "version": "0.2.0",
   "description": "A set of components, hooks and utilities for building React applications.",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "module": "dist/amerkit.esm.js",
   "license": "MIT",
   "files": [
     "README.md",
     "dist"
   ],
-  "exports": {
-    "types": {
-      "import": "./dist/index.d.ts",
-      "require": "./dist/index.d.cts"
-    },
-    "import": "./dist/amerkit.esm.js",
-    "require": "./dist/index.cjs"
-  },
   "type": "module",
   "sideEffects": false,
   "engines": {
