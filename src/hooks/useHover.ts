@@ -1,7 +1,7 @@
 import { type RefObject, useState } from 'react';
-import useEventListener from './useEventListener';
+import { useEventListener } from './useEventListener';
 
-export default function useHover<T extends HTMLElement = HTMLElement>(
+export function useHover<T extends HTMLElement = HTMLElement>(
   elementRef: RefObject<T>,
 ): boolean {
   const [value, setValue] = useState<boolean>(false);
