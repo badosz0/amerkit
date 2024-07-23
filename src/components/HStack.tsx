@@ -22,7 +22,7 @@ const HStack = forwardRef<HStackElement, HStackProps>((props, forwardedRef) => {
       style={{
         ...style,
         display: 'flex',
-        ...(spacing && { gap: `var(--amer-kit-spacing-${spacing})` }),
+        ...(spacing && { gap: `var(--amerkit-spacing-${spacing})` }),
         ...(alignV && {
           alignItems: {
             start: 'start',

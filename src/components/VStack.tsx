@@ -9,7 +9,7 @@ type VStackElement = ElementRef<'div'>;
 type VStackProps = {
   alignV?: 'start' | 'center' | 'end' | 'between';
   alignH?: 'start' | 'center' | 'end' | 'between';
-  spacing?: 'sm' | 'md' | 'lg' | 'xl';
+  spacing?: 'sm' | 'md' | 'lg' | 'xl' | 'none';
   reverse?: boolean;
 } & ComponentPropsWithoutRef<'div'>;
 
@@ -23,7 +23,7 @@ const VStack = forwardRef<VStackElement, VStackProps>((props, forwardedRef) => {
         ...style,
         display: 'flex',
         flexDirection: 'column',
-        ...(spacing && { gap: `var(--amer-kit-spacing-${spacing})` }),
+        ...(spacing && { gap: `var(--amerkit-spacing-${spacing})` }),
         ...(alignV && {
           justifyContent: {
             start: 'flex-start',

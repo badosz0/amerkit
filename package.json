@@ -1,6 +1,6 @@
 {
   "name": "amerkit",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A set of components, hooks and utilities for building React applications.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
