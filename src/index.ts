@@ -5,3 +5,4 @@ export * from './hooks/useDebounce';
 export * from './hooks/useEventListener';
 export * from './hooks/useHover';
 export * from './hooks/useIsomorphicLayoutEffect';
+export * from './hooks/useOutsideClick';
