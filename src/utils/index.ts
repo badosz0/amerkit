@@ -34,6 +34,10 @@ export namespace Utils {
     return array[Math.floor(Math.random() * array.length)];
   }
 
+  export function removeDuplicates<T>(array: T[]): T[] {
+    return [...new Set(array)];
+  }
+
   const numberFormat = Intl.NumberFormat('en-US', {
     notation: 'compact',
     maximumFractionDigits: 1,
