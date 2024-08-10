@@ -1586,5 +1586,3 @@ export const COUNTRIES: Country[] = BASE.map((country) => {
       .join('-')}.svg`,
   };
 });
-
-console.log(COUNTRIES);
