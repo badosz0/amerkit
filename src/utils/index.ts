@@ -20,13 +20,13 @@ export namespace Utils {
       [array[i], array[index]] = [array[index], array[i]];
     }
   }
-  
+
   export function shuffleArray<T>(array: T[], avoidOriginal = false): T[] {
     const copy = [...array];
     do {
       shuffleArrayInPlace(copy);
     } while (avoidOriginal && copy.every((element, i) => array[i] === element));
-  
+
     return copy;
   }
 
@@ -38,7 +38,7 @@ export namespace Utils {
     notation: 'compact',
     maximumFractionDigits: 1,
   });
-  
+
   export function abbreviate(value: number | bigint): string {
     return numberFormat.format(value);
   }
@@ -58,5 +58,9 @@ export namespace Utils {
 
   export function sliceText(text: string, length: number): string {
     return text.length > length ? `${text.slice(0, length)}...` : text;
+  }
+
+  export function pluralize(amount: number, text: string): string {
+    return `${text}${amount === 1 ? '' : 's'}`;
   }
 }
